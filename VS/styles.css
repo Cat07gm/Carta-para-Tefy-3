@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+    font-family: "Georgia", serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Tarjeta */
+.card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    width: 60%;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 5%;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(255, 100, 150, 0.4);
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    color: #d6336c;
+    font-size: 2.2rem;
+}
+
+/* Texto de carta */
+.mensaje {
+    font-size: 1.2rem;
+    color: #6a1b2d;
+}
+
+/* Botón */
+.btn {
+    background: #ff5c8a;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff2d6f;
+}
+
+/* Sorpresa */
+.sorpresa {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    color: #b4004e;
+    transition: 0.5s;
+}
+
+.oculto {
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+/* Corazones animados */
+.hearts-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.heart {
+    position: absolute;
+    color: rgba(255, 0, 100, 0.7);
+    font-size: 20px;
+    animation: flotar 4s linear infinite;
+}
+
+@keyframes flotar {
+    from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-200px) rotate(360deg);
+        opacity: 0;
+    }
+}
+.mensaje1 {
+    font-size: 1.2rem;
+    color: #6a1b2d;
+}
