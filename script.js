@@ -25,3 +25,4 @@ setInterval(() => {
         heart.remove();
     }, dur * 1000);
 }, 500);
+
